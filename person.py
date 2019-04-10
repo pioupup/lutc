@@ -8,8 +8,7 @@ class Person:
 	def __str__(self):
 		dict_str = self.__class__.__name__ + ":"
 		for key in self.__dict__:
-			dict_str += " "
-			dict_str += str(key) + "=>" + str(self.__dict__[key]) + ";"
+			dict_str += " " + str(key) + "=>" + str(self.__dict__[key]) + ";"
 		return dict_str
 	def lastName(self):
 		return self.name.split()[-1]
